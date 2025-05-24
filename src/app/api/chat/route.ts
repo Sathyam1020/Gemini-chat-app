@@ -54,6 +54,7 @@ export async function POST(req: NextRequest) {
       },
     });
 
+  // eslint-disable-next-line @typescript-eslint/no-explicit-any
   } catch (error: any) {
     // Log and return an error response if something goes wrong
     console.error("API Error:", error);
