@@ -2,20 +2,16 @@
 @tailwind components;
 @tailwind utilities;
 
+/* globals.css or Tailwind base layer */
 :root {
-  --background: #ffffff;
-  --foreground: #171717;
+  --background-gradient-light: linear-gradient(135deg, #fdfbfb, #ebedee);
+  --background-gradient-dark: linear-gradient(135deg, #1e1e2f, #2e2e42);
 }
 
-@media (prefers-color-scheme: dark) {
-  :root {
-    --background: #0a0a0a;
-    --foreground: #ededed;
-  }
+.bg-gradient-light {
+  background: var(--background-gradient-light);
 }
 
-body {
-  color: var(--foreground);
-  background: var(--background);
-  font-family: Arial, Helvetica, sans-serif;
+.bg-gradient-dark {
+  background: var(--background-gradient-dark);
 }
