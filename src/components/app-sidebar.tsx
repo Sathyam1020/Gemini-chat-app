@@ -60,7 +60,7 @@ export function AppSidebar() {
 
     return (
         <Sidebar>
-            <SidebarHeader>
+            <SidebarHeader className=" bg-white dark:bg-black ">
                 <div className="flex items-center justify-between">
                     <h2 className="text-lg font-bold">Your Chats</h2>
                     <div className="flex items-center gap-2">
@@ -92,7 +92,7 @@ export function AppSidebar() {
                 </div>
             </SidebarHeader>
 
-            <SidebarContent className="overflow-y-auto">
+            <SidebarContent className="overflow-y-auto bg-white dark:bg-black">
                 <div className="p-4">
                     <Button onClick={handleCreateNewChat} className="w-full mb-4">
                         + New Chat
